@@ -25,12 +25,13 @@ public final class NetworkRouter: Routable {
             throw NetworkError.invalidURL
         }
         
+        let data = try await requestData(with: urlRequest)
+        
         do {
-            return try await decoder.decode(T.self, from: requestData(with: urlRequest))
+            return try decoder.decode(T.self, from: data)
         } catch {
             throw NetworkError.parsingError
         }
-
     }
 }
 

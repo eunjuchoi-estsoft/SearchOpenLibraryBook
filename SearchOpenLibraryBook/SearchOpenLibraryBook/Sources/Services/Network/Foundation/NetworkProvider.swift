@@ -15,7 +15,6 @@ public protocol Requestable {
 
 public final class NetworkProvider<Endpoint: BaseEndpoint>: Requestable {
     private let router: NetworkRouter
-    private let decoder = JSONDecoder()
     
     public init(router: NetworkRouter) {
         self.router = router
@@ -23,7 +22,7 @@ public final class NetworkProvider<Endpoint: BaseEndpoint>: Requestable {
     
     public func request<T: Decodable>(with endpoint: Endpoint) async throws -> T {
         do {
-            return try await decoder.decode(T.self, from: router.request(with: endpoint))
+            return try await router.request(with: endpoint)
         } catch {
             if let networkError = error as? NetworkError {
                 switch networkError {
@@ -32,11 +31,15 @@ public final class NetworkProvider<Endpoint: BaseEndpoint>: Requestable {
                         throw searchError
                     }
                     throw SearchError.serverError
+                case .invalidURL:
+                    throw SearchError.invalidURL
+                case .parsingError:
+                    throw SearchError.parsingFailed
                 default:
                     throw SearchError.serverError
                 }
             }
-            throw SearchError.parsingFailed
+            throw SearchError.serverError
         }
     }
 }

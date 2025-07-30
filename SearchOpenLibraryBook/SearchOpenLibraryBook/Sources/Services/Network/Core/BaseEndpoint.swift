@@ -14,15 +14,15 @@ public protocol BaseEndpoint: EndpointType {
 }
 
 extension BaseEndpoint {
-    var baseURL: URL {
+    public var baseURL: URL {
         return URL(string: NetworkEnvironment.baseURL)!
     }
     
-    var path: String {
+    public var path: String {
         return urlPath
     }
     
-    var task: HTTPTask {
+    public var task: HTTPTask {
         if let parameters = parameters {
             if let body = body {
                 return .queryBody(parameters, body)
@@ -37,7 +37,7 @@ extension BaseEndpoint {
         return .requestPlain
     }
     
-    var header: HeaderType {
+    public var header: HeaderType {
         return .basic
     }
 }

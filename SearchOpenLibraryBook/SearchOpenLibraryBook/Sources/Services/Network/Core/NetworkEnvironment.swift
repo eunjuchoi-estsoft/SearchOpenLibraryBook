@@ -8,5 +8,5 @@
 import Foundation
 
 public enum NetworkEnvironment {
-    static let baseURL = "https://openlibrary.org"
+    static let baseURL = "http://openlibrary.org"
 }

@@ -31,21 +31,21 @@ public struct SearchBookResponse: Decodable {
 // MARK: - Document
 
 public struct Document: Decodable {
-    let authorKey: [String]
-    let authorName: [String]
+    let authorKey: [String]?
+    let authorName: [String]?
     let coverEditionKey: String?
     let coverId: Int?
-    let ebookAccess: String
-    let editionCount: Int
-    let firstPublishYear: Int
-    let hasFulltext: Bool
+    let ebookAccess: String?
+    let editionCount: Int?
+    let firstPublishYear: Int?
+    let hasFulltext: Bool?
     let ia: [String]?
     let iaCollectionS: String?
     let key: String
-    let language: [String]
+    let language: [String]?
     let lendingEditionS: String?
     let lendingIdentifierS: String?
-    let publicScanB: Bool
+    let publicScanB: Bool?
     let title: String
     let idStandardEbooks: [String]?
     let idLibrivox: [String]?
@@ -87,8 +87,8 @@ extension SearchBookResponse {
                 authors: $0.authorName,
                 firstPublishYear: $0.firstPublishYear,
                 languages: $0.language,
-                coverId: $0.coverId,
-                key: $0.key
+                thumbnailURL: $0.coverId.map { "http://covers.openlibrary.org/b/id/\($0)-M.jpg" },
+                pageURL: "\(NetworkEnvironment.baseURL)\($0.key)"
             )
         }
     }

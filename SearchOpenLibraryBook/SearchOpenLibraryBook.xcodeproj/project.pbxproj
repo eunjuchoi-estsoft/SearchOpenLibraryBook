@@ -21,6 +21,7 @@
 		CA53DD392E39AEB1006E5935 /* ReducerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD382E39AEB1006E5935 /* ReducerProtocol.swift */; };
 		CA53DD3B2E39AEE3006E5935 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD3A2E39AEE3006E5935 /* Store.swift */; };
 		CA53DD3E2E39B457006E5935 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD3D2E39B457006E5935 /* SearchView.swift */; };
+		CA53DD462E39D344006E5935 /* EmptyResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD452E39D344006E5935 /* EmptyResultView.swift */; };
 		CA53DD4E2E39DA6E006E5935 /* SearchBookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD4D2E39DA6E006E5935 /* SearchBookResponse.swift */; };
 		CA53DD512E39DD16006E5935 /* SearchEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD502E39DD16006E5935 /* SearchEndpoint.swift */; };
 		CA53DD532E39DF89006E5935 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD522E39DF89006E5935 /* SearchService.swift */; };
@@ -65,6 +66,7 @@
 		CA53DD382E39AEB1006E5935 /* ReducerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerProtocol.swift; sourceTree = "<group>"; };
 		CA53DD3A2E39AEE3006E5935 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		CA53DD3D2E39B457006E5935 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		CA53DD452E39D344006E5935 /* EmptyResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResultView.swift; sourceTree = "<group>"; };
 		CA53DD4D2E39DA6E006E5935 /* SearchBookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookResponse.swift; sourceTree = "<group>"; };
 		CA53DD502E39DD16006E5935 /* SearchEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEndpoint.swift; sourceTree = "<group>"; };
 		CA53DD522E39DF89006E5935 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		CA53DD432E39D325006E5935 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA53DD452E39D344006E5935 /* EmptyResultView.swift */,
 				CA53DD3D2E39B457006E5935 /* SearchView.swift */,
 				CA53DD582E3A5533006E5935 /* BookCardView.swift */,
 			);
@@ -451,6 +454,7 @@
 				CA53DD1F2E38A2B7006E5935 /* NetworkConstants.swift in Sources */,
 				CA53DD3B2E39AEE3006E5935 /* Store.swift in Sources */,
 				CA53DD012E389DC6006E5935 /* SearchOpenLibraryBookApp.swift in Sources */,
+				CA53DD462E39D344006E5935 /* EmptyResultView.swift in Sources */,
 				CA53DD552E39DFD2006E5935 /* Book.swift in Sources */,
 				CA53DD392E39AEB1006E5935 /* ReducerProtocol.swift in Sources */,
 				CA53DD3E2E39B457006E5935 /* SearchView.swift in Sources */,

@@ -7,22 +7,23 @@
 
 import Foundation
 
-public protocol BaseEndpoint: EndpointType {
+protocol BaseEndpoint: EndpointType {
     var urlPath: String { get }
     var parameters: [String: Any]? { get }
     var body: [String: Any]? { get }
 }
 
 extension BaseEndpoint {
-    public var baseURL: URL {
+    
+    var baseURL: URL {
         return URL(string: NetworkEnvironment.baseURL)!
     }
     
-    public var path: String {
+    var path: String {
         return urlPath
     }
     
-    public var task: HTTPTask {
+    var task: HTTPTask {
         if let parameters = parameters {
             if let body = body {
                 return .queryBody(parameters, body)
@@ -37,7 +38,7 @@ extension BaseEndpoint {
         return .requestPlain
     }
     
-    public var header: HeaderType {
+    var header: HeaderType {
         return .basic
     }
 }

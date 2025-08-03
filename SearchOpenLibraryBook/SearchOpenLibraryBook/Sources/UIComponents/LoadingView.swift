@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct LoadingView: View {
+struct LoadingView: View {
     
     // MARK: - Properties
     
@@ -26,7 +26,7 @@ public struct LoadingView: View {
     
     // MARK: - Body
     
-    public var body: some View {
+    var body: some View {
         ProgressView()
             .scaleEffect(scaleSize, anchor: .center)
             .progressViewStyle(CircularProgressViewStyle(tint: tintColor))

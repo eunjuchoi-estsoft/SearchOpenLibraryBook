@@ -7,6 +7,6 @@
 
 import Foundation
 
-public enum NetworkEnvironment {
+enum NetworkEnvironment {
     static let baseURL = "http://openlibrary.org"
 }

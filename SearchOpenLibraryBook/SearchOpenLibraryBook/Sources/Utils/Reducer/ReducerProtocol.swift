@@ -19,7 +19,7 @@ protocol ReducerProtocol {
 }
 
 /// 다른 액션을 트리거하는 Side Effect
-public enum EffectType<Action> {
+enum EffectType<Action> {
     case task(operation: @Sendable () async -> Action)
     case none
 }

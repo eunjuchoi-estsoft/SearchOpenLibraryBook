@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum SearchEndpoint {
+enum SearchEndpoint {
     
     /// 도서 검색
     case searchBook(query: String)
@@ -15,25 +15,25 @@ public enum SearchEndpoint {
 
 extension SearchEndpoint: BaseEndpoint {
     
-    public var urlPath: String {
+    var urlPath: String {
         switch self {
         case .searchBook:
             return "/search.json"
         }
     }
     
-    public var method: HTTPMethod {
+    var method: HTTPMethod {
         return .get
     }
     
-    public var parameters: [String: Any]? {
+    var parameters: [String: Any]? {
         switch self {
         case let .searchBook(query):
             return ["q": query]
         }
     }
     
-    public var body: [String : Any]? {
+    var body: [String : Any]? {
         return .none
     }
 }

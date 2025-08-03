@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - SearchBookResponse
 
-public struct SearchBookResponse: Decodable {
+struct SearchBookResponse: Decodable {
     let numFound: Int
     let start: Int
     let numFoundExact: Bool
@@ -18,7 +18,7 @@ public struct SearchBookResponse: Decodable {
     let query: String
     let offset: Int?
     let docs: [Document]
-
+    
     enum CodingKeys: String, CodingKey {
         case numFound, start, numFoundExact
         case bookNumFound = "num_found"
@@ -30,7 +30,7 @@ public struct SearchBookResponse: Decodable {
 
 // MARK: - Document
 
-public struct Document: Decodable {
+struct Document: Decodable {
     let authorKey: [String]?
     let authorName: [String]?
     let coverEditionKey: String?
@@ -51,7 +51,7 @@ public struct Document: Decodable {
     let idLibrivox: [String]?
     let subtitle: String?
     let idProjectGutenberg: [String]?
-
+    
     enum CodingKeys: String, CodingKey {
         case authorKey = "author_key"
         case authorName = "author_name"
@@ -80,7 +80,7 @@ public struct Document: Decodable {
 
 extension SearchBookResponse {
     
-    public func toEntity() -> [Book] {
+    func toEntity() -> [Book] {
         return docs.map {
             Book(
                 title: $0.title,

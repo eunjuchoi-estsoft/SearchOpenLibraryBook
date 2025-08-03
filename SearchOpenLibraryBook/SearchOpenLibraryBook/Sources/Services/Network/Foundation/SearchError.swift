@@ -7,14 +7,14 @@
 
 import Foundation
 
-public enum SearchError: Int, Error {
+enum SearchError: Int, Error {
     case invalidURL = 400
     case forbidden = 403
     case notFound = 404
     case serverError = 500
     case parsingFailed
     
-    public var message: String {
+    var message: String {
         switch self {
         case .invalidURL:
             "잘못된 요청입니다. 다시 시도해주세요."

@@ -7,13 +7,14 @@
 
 import Foundation
 
-public protocol BaseEndpoint: EndpointType {
+protocol BaseEndpoint: EndpointType {
     var urlPath: String { get }
     var parameters: [String: Any]? { get }
     var body: [String: Any]? { get }
 }
 
 extension BaseEndpoint {
+    
     var baseURL: URL {
         return URL(string: NetworkEnvironment.baseURL)!
     }

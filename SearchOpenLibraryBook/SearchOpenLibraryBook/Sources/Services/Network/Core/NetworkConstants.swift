@@ -7,20 +7,20 @@
 
 import Foundation
 
-public enum HeaderType {
+enum HeaderType {
     case basic
     case custom([String: String])
 }
 
-public enum HTTPHeaderField: String {
+enum HTTPHeaderField: String {
     case contentType = "Content-Type"
 }
 
-public enum ContentType: String {
+enum ContentType: String {
     case json = "application/json"
 }
 
-public enum HTTPTask {
+enum HTTPTask {
     case query(_ query: [String: Any])
     case queryBody(_ query: [String: Any], _ body: [String: Any])
     case requestBody(_ body: [String: Any])

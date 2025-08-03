@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum NetworkError: Error {
+enum NetworkError: Error {
     case invalidStatusCode(Int)
     case invalidURL
     case parsingError

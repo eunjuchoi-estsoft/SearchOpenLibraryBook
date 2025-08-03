@@ -11,7 +11,12 @@ import SwiftUI
 struct SearchOpenLibraryBookApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let router = NetworkRouter()
+            let networkProvider = NetworkProvider<SearchEndpoint>(router: router)
+            let service = SearchServiceImpl(provider: networkProvider)
+            let reducer = SearchMainReducer(service: service)
+            let store = Store(reducer: reducer)
+            SearchMainView(store: store)
         }
     }
 }

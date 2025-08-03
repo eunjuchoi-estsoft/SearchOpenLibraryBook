@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol EndpointType {
+protocol EndpointType {
     var baseURL: URL { get }
     var method: HTTPMethod { get }
     var path: String { get }
@@ -67,7 +67,7 @@ extension EndpointType {
 
 extension EndpointType {
     
-    public func creatURLRequest() throws -> URLRequest {
+    func creatURLRequest() throws -> URLRequest {
         let url = baseURL
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
         urlRequest.httpMethod = method.rawValue

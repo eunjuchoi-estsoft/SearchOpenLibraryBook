@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA53DD002E389DC6006E5935 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DCFD2E389DC6006E5935 /* ContentView.swift */; };
 		CA53DD012E389DC6006E5935 /* SearchOpenLibraryBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DCFE2E389DC6006E5935 /* SearchOpenLibraryBookApp.swift */; };
 		CA53DD022E389DC6006E5935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA53DCFC2E389DC6006E5935 /* Assets.xcassets */; };
 		CA53DD1B2E38A235006E5935 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD1A2E38A235006E5935 /* HTTPMethod.swift */; };
@@ -51,7 +50,6 @@
 		CA53DCDF2E389DBC006E5935 /* SearchOpenLibraryBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchOpenLibraryBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA53DCE92E389DBC006E5935 /* SearchOpenLibraryBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchOpenLibraryBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA53DCFC2E389DC6006E5935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CA53DCFD2E389DC6006E5935 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA53DCFE2E389DC6006E5935 /* SearchOpenLibraryBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOpenLibraryBookApp.swift; sourceTree = "<group>"; };
 		CA53DD1A2E38A235006E5935 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		CA53DD1C2E38A25D006E5935 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 		CA53DD042E389E61006E5935 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				CA53DCFD2E389DC6006E5935 /* ContentView.swift */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -422,7 +419,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA53DD2B2E38AA56006E5935 /* SearchError.swift in Sources */,
-				CA53DD002E389DC6006E5935 /* ContentView.swift in Sources */,
 				CA53DD602E3C5E66006E5935 /* ImageConstants.swift in Sources */,
 				CA53DD512E39DD16006E5935 /* SearchEndpoint.swift in Sources */,
 				CA53DD252E38A446006E5935 /* BaseEndpoint.swift in Sources */,

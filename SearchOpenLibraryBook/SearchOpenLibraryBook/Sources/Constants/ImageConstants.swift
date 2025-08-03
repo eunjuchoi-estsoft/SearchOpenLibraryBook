@@ -11,9 +11,11 @@ import SwiftUI
 enum SystemImage: String, CaseIterable {
     case chevronUp = "chevron.up"
     case chevronDown = "chevron.down"
+    case chevronRight = "chevron.right"
     case heart = "heart.fill"
     case magnifyingglass = "magnifyingglass"
     case exclamationmarkCircle = "exclamationmark.circle"
+    case bookClosed = "book.closed"
     
     var image: Image {
         Image(systemName: self.rawValue)

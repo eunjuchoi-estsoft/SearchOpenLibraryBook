@@ -21,6 +21,8 @@
 		CA53DD392E39AEB1006E5935 /* ReducerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD382E39AEB1006E5935 /* ReducerProtocol.swift */; };
 		CA53DD3B2E39AEE3006E5935 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD3A2E39AEE3006E5935 /* Store.swift */; };
 		CA53DD3E2E39B457006E5935 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD3D2E39B457006E5935 /* SearchView.swift */; };
+		CA53DD402E39BC71006E5935 /* SearchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD3F2E39BC71006E5935 /* SearchMainView.swift */; };
+		CA53DD422E39BCC2006E5935 /* SearchMainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD412E39BCC2006E5935 /* SearchMainReducer.swift */; };
 		CA53DD462E39D344006E5935 /* EmptyResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD452E39D344006E5935 /* EmptyResultView.swift */; };
 		CA53DD4E2E39DA6E006E5935 /* SearchBookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD4D2E39DA6E006E5935 /* SearchBookResponse.swift */; };
 		CA53DD512E39DD16006E5935 /* SearchEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD502E39DD16006E5935 /* SearchEndpoint.swift */; };
@@ -66,6 +68,8 @@
 		CA53DD382E39AEB1006E5935 /* ReducerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerProtocol.swift; sourceTree = "<group>"; };
 		CA53DD3A2E39AEE3006E5935 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		CA53DD3D2E39B457006E5935 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		CA53DD3F2E39BC71006E5935 /* SearchMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMainView.swift; sourceTree = "<group>"; };
+		CA53DD412E39BCC2006E5935 /* SearchMainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMainReducer.swift; sourceTree = "<group>"; };
 		CA53DD452E39D344006E5935 /* EmptyResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResultView.swift; sourceTree = "<group>"; };
 		CA53DD4D2E39DA6E006E5935 /* SearchBookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookResponse.swift; sourceTree = "<group>"; };
 		CA53DD502E39DD16006E5935 /* SearchEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEndpoint.swift; sourceTree = "<group>"; };
@@ -243,6 +247,7 @@
 		CA53DD3C2E39B3B1006E5935 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				CA53DD442E39D330006E5935 /* Reducer */,
 				CA53DD432E39D325006E5935 /* View */,
 			);
 			path = Search;
@@ -251,11 +256,20 @@
 		CA53DD432E39D325006E5935 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA53DD3F2E39BC71006E5935 /* SearchMainView.swift */,
 				CA53DD452E39D344006E5935 /* EmptyResultView.swift */,
 				CA53DD3D2E39B457006E5935 /* SearchView.swift */,
 				CA53DD582E3A5533006E5935 /* BookCardView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CA53DD442E39D330006E5935 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CA53DD412E39BCC2006E5935 /* SearchMainReducer.swift */,
+			);
+			path = Reducer;
 			sourceTree = "<group>";
 		};
 		CA53DD492E39D6F3006E5935 /* UIComponents */ = {
@@ -450,6 +464,7 @@
 				CA53DD1D2E38A25D006E5935 /* NetworkError.swift in Sources */,
 				CA53DD5B2E3AF8DB006E5935 /* LoadingView.swift in Sources */,
 				CA53DD212E38A2EE006E5935 /* EndpointType.swift in Sources */,
+				CA53DD402E39BC71006E5935 /* SearchMainView.swift in Sources */,
 				CA53DD232E38A3D0006E5935 /* NetworkEnvironment.swift in Sources */,
 				CA53DD1F2E38A2B7006E5935 /* NetworkConstants.swift in Sources */,
 				CA53DD3B2E39AEE3006E5935 /* Store.swift in Sources */,
@@ -463,6 +478,7 @@
 				CA53DD272E38A5C1006E5935 /* NetworkRouter.swift in Sources */,
 				CA53DD532E39DF89006E5935 /* SearchService.swift in Sources */,
 				CA53DD592E3A5533006E5935 /* BookCardView.swift in Sources */,
+				CA53DD422E39BCC2006E5935 /* SearchMainReducer.swift in Sources */,
 				CA53DD292E38A90B006E5935 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

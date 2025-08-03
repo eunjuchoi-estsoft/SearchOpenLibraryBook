@@ -23,6 +23,7 @@
 		CA53DD3B2E39AEE3006E5935 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD3A2E39AEE3006E5935 /* Store.swift */; };
 		CA53DD4E2E39DA6E006E5935 /* SearchBookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD4D2E39DA6E006E5935 /* SearchBookResponse.swift */; };
 		CA53DD512E39DD16006E5935 /* SearchEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD502E39DD16006E5935 /* SearchEndpoint.swift */; };
+		CA53DD552E39DFD2006E5935 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD542E39DFD2006E5935 /* Book.swift */; };
 		CA53DD602E3C5E66006E5935 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD5F2E3C5E66006E5935 /* ImageConstants.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		CA53DD3A2E39AEE3006E5935 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		CA53DD4D2E39DA6E006E5935 /* SearchBookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookResponse.swift; sourceTree = "<group>"; };
 		CA53DD502E39DD16006E5935 /* SearchEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEndpoint.swift; sourceTree = "<group>"; };
+		CA53DD542E39DFD2006E5935 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		CA53DD562E39F30D006E5935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA53DD5F2E3C5E66006E5935 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				CA53DD4D2E39DA6E006E5935 /* SearchBookResponse.swift */,
+				CA53DD542E39DFD2006E5935 /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				CA53DD1F2E38A2B7006E5935 /* NetworkConstants.swift in Sources */,
 				CA53DD3B2E39AEE3006E5935 /* Store.swift in Sources */,
 				CA53DD012E389DC6006E5935 /* SearchOpenLibraryBookApp.swift in Sources */,
+				CA53DD552E39DFD2006E5935 /* Book.swift in Sources */,
 				CA53DD392E39AEB1006E5935 /* ReducerProtocol.swift in Sources */,
 				CA53DD1B2E38A235006E5935 /* HTTPMethod.swift in Sources */,
 				CA53DD4E2E39DA6E006E5935 /* SearchBookResponse.swift in Sources */,

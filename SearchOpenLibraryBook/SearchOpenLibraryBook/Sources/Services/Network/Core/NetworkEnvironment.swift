@@ -8,5 +8,6 @@
 import Foundation
 
 enum NetworkEnvironment {
-    static let baseURL = "http://openlibrary.org"
+    static let baseURL = "https://openlibrary.org"
+    static let bookCoverURL = "https://covers.openlibrary.org/b/id"
 }

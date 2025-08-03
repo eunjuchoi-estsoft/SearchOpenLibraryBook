@@ -87,7 +87,7 @@ extension SearchBookResponse {
                 authors: $0.authorName,
                 firstPublishYear: $0.firstPublishYear,
                 languages: $0.language,
-                thumbnailURL: $0.coverId.map { "http://covers.openlibrary.org/b/id/\($0)-M.jpg" },
+                thumbnailURL: $0.coverId.map { "\(NetworkEnvironment.bookCoverURL)/\($0)-M.jpg" },
                 pageURL: "\(NetworkEnvironment.baseURL)\($0.key)"
             )
         }

@@ -23,6 +23,7 @@
 		CA53DD3B2E39AEE3006E5935 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD3A2E39AEE3006E5935 /* Store.swift */; };
 		CA53DD4E2E39DA6E006E5935 /* SearchBookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD4D2E39DA6E006E5935 /* SearchBookResponse.swift */; };
 		CA53DD512E39DD16006E5935 /* SearchEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD502E39DD16006E5935 /* SearchEndpoint.swift */; };
+		CA53DD532E39DF89006E5935 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD522E39DF89006E5935 /* SearchService.swift */; };
 		CA53DD552E39DFD2006E5935 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD542E39DFD2006E5935 /* Book.swift */; };
 		CA53DD5B2E3AF8DB006E5935 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD5A2E3AF8DB006E5935 /* LoadingView.swift */; };
 		CA53DD602E3C5E66006E5935 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD5F2E3C5E66006E5935 /* ImageConstants.swift */; };
@@ -65,6 +66,7 @@
 		CA53DD3A2E39AEE3006E5935 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		CA53DD4D2E39DA6E006E5935 /* SearchBookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookResponse.swift; sourceTree = "<group>"; };
 		CA53DD502E39DD16006E5935 /* SearchEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEndpoint.swift; sourceTree = "<group>"; };
+		CA53DD522E39DF89006E5935 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		CA53DD542E39DFD2006E5935 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		CA53DD562E39F30D006E5935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA53DD5A2E3AF8DB006E5935 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			children = (
 				CA53DD182E38A1F3006E5935 /* Core */,
 				CA53DD192E38A1F9006E5935 /* Foundation */,
+				CA53DD4F2E39DD05006E5935 /* Search */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				CA53DD502E39DD16006E5935 /* SearchEndpoint.swift */,
+				CA53DD522E39DF89006E5935 /* SearchService.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -434,6 +438,7 @@
 				CA53DD1B2E38A235006E5935 /* HTTPMethod.swift in Sources */,
 				CA53DD4E2E39DA6E006E5935 /* SearchBookResponse.swift in Sources */,
 				CA53DD272E38A5C1006E5935 /* NetworkRouter.swift in Sources */,
+				CA53DD532E39DF89006E5935 /* SearchService.swift in Sources */,
 				CA53DD292E38A90B006E5935 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

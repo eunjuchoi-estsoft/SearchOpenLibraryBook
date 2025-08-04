@@ -32,6 +32,7 @@
 		CA53DD5B2E3AF8DB006E5935 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD5A2E3AF8DB006E5935 /* LoadingView.swift */; };
 		CA53DD5D2E3B31B5006E5935 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD5C2E3B31B5006E5935 /* BookDetailView.swift */; };
 		CA53DD602E3C5E66006E5935 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD5F2E3C5E66006E5935 /* ImageConstants.swift */; };
+		CA53DD722E3FAA8D006E5935 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD712E3FAA8D006E5935 /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		CA53DD5A2E3AF8DB006E5935 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		CA53DD5C2E3B31B5006E5935 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		CA53DD5F2E3C5E66006E5935 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
+		CA53DD712E3FAA8D006E5935 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -279,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				CA53DD5A2E3AF8DB006E5935 /* LoadingView.swift */,
+				CA53DD712E3FAA8D006E5935 /* SafariView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA53DD2B2E38AA56006E5935 /* SearchError.swift in Sources */,
+				CA53DD722E3FAA8D006E5935 /* SafariView.swift in Sources */,
 				CA53DD602E3C5E66006E5935 /* ImageConstants.swift in Sources */,
 				CA53DD512E39DD16006E5935 /* SearchEndpoint.swift in Sources */,
 				CA53DD252E38A446006E5935 /* BaseEndpoint.swift in Sources */,

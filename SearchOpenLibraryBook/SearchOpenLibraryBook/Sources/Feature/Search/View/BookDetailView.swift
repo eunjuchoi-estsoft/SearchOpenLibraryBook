@@ -65,9 +65,10 @@ struct BookDetailView: View {
                             .font(.system(size: 20, weight: .semibold))
                             .foregroundStyle(.black)
                     }
+                    .frame(maxWidth: .infinity)
                 })
-                .padding(.vertical, 12)
                 .frame(maxWidth: .infinity)
+                .padding(.vertical, 12)
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(lineWidth: 1)
@@ -80,7 +81,7 @@ struct BookDetailView: View {
 }
 
 #Preview {
-    let book = Book(title: "Swift programming", authors: ["George S. Clason"], firstPublishYear: 2023, languages: [], thumbnailURL: "", pageURL: "")
+    let book = Book(title: "Ff (The Alphabet)", authors: ["George S. Clason"], firstPublishYear: 2023, languages: [], thumbnailURL: "https://covers.openlibrary.org/b/id/14558369-M.jpg", pageURL: "")
     let router = NetworkRouter()
     let provider = NetworkProvider<SearchEndpoint>(router: router)
     let service = SearchServiceImpl(provider: provider)

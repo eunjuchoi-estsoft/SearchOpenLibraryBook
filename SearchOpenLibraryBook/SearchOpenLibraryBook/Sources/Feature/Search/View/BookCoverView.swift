@@ -32,10 +32,10 @@ struct BookCoverView: View {
     var body: some View {
         if let urlString = urlString,
            let url = URL(string: urlString) {
-            AsyncImage(url: url) { image in
+            CachedAsyncImage(url: url) { image in
                 image
                     .resizable()
-                    .scaledToFill()
+                    .scaledToFit()
                     .frame(maxWidth: width)
                     .frame(height: height)
             } placeholder: {

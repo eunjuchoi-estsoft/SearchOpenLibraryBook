@@ -32,34 +32,11 @@ struct BookCardView: View {
             HStack(alignment: .top, spacing: 15) {
                 
                 // 책 표지 이미지
-                if let urlString = book.thumbnailURL,
-                   let url = URL(string: urlString) {
-                    AsyncImage(url: url) { image in
-                        image
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 100, height: 130)
-                    } placeholder: {
-                        Rectangle()
-                            .fill(Color(uiColor: .systemGray4))
-                            .frame(width: 100, height: 130)
-                            .overlay {
-                                ProgressView()
-                            }
-                    }
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .padding(.vertical, 10)
-                } else {
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color(uiColor: .systemGray5))
-                        .frame(width: 100, height: 130)
-                        .overlay {
-                            SystemImage.bookClosed.image
-                                .font(.system(size: 40))
-                                .foregroundColor(.gray)
-                        }
-                        .padding(.vertical, 10)
-                }
+                BookCoverView(
+                    urlString: book.thumbnailURL,
+                    width: 100,
+                    height: 130
+                )
                 
                 // 책 정보
                 VStack {
@@ -181,4 +158,9 @@ fileprivate struct DetailBookInfoView: View {
             }
         }
     }
+}
+
+#Preview {
+    BookCardView(book: Book(title: "", authors: nil, firstPublishYear: 2024, languages: ["kor", "eng"], thumbnailURL: "", pageURL: ""))
+        .frame(height: 200)
 }

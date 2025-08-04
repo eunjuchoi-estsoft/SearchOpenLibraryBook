@@ -36,11 +36,16 @@ final class SearchMainReducer: ReducerProtocol {
     
     let initialState: State = .init()
     private let service: SearchService
+    private let coordinator: any Coordinator
     
     // MARK: - Initializer
     
-    init(service: SearchService) {
+    init(
+        service: SearchService,
+        coordinator: Coordinator
+    ) {
         self.service = service
+        self.coordinator = coordinator
     }
     
     // MARK: - Reduce
@@ -63,8 +68,8 @@ final class SearchMainReducer: ReducerProtocol {
             state.errorMessage = error.message
             state.searchResultViewState = state.lastSearchText.isEmpty ? .initial : .hasResult
             
-        case .onTapPushDetailButton(_):
-            return .none
+        case let .onTapPushDetailButton(book):
+            coordinator.push(.bookDetail(book: book))
             
         case .dismissAlert:
             state.isAlertPresented = false

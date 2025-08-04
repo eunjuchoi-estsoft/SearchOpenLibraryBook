@@ -11,7 +11,6 @@ struct SearchMainView: View {
     
     // MARK: - Properties
     
-    @State private var navigationPath = NavigationPath()
     @StateObject private var store: Store<SearchMainReducer>
     
     // MARK: - Initializer
@@ -22,40 +21,35 @@ struct SearchMainView: View {
     
     // MARK: - Body
     var body: some View {
-        NavigationStack(path: $navigationPath) {
-            VStack(spacing: 0) {
-                SearchView(
-                    placeholder: "도서 제목이나 저자명으로 검색해보세요",
-                    searchText:
-                        Binding(
-                            get: { store.state.searchText },
-                            set: { store.send(.onChange(searchText: $0)) }
-                        )
-                ) {
-                    store.send(.onTapSearchButton)
-                }
-                .padding(.top, 10)
-                .padding(.horizontal, 24)
-                
-                resultView()
-                    .background(Color(uiColor: .systemGray4))
-            }
-            .alert(store.state.errorTitle,
-                   isPresented: Binding(
-                    get: { store.state.isAlertPresented },
-                    set: { _ in store.send(.dismissAlert) }
-                   )
+        VStack(spacing: 0) {
+            SearchView(
+                placeholder: "도서 제목이나 저자명으로 검색해보세요",
+                searchText:
+                    Binding(
+                        get: { store.state.searchText },
+                        set: { store.send(.onChange(searchText: $0)) }
+                    )
             ) {
-                Button("확인", role: .cancel) {}
-            } message: {
-                Text(store.state.errorMessage)
+                store.send(.onTapSearchButton)
             }
-            .navigationTitle("도서 검색")
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationDestination(for: Book.self) { book in
-                BookDetailView()
-            }
+            .padding(.top, 10)
+            .padding(.horizontal, 24)
+            
+            resultView()
+                .background(Color(uiColor: .systemGray4))
         }
+        .alert(store.state.errorTitle,
+               isPresented: Binding(
+                get: { store.state.isAlertPresented },
+                set: { _ in store.send(.dismissAlert) }
+               )
+        ) {
+            Button("확인", role: .cancel) {}
+        } message: {
+            Text(store.state.errorMessage)
+        }
+        .navigationTitle("도서 검색")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
@@ -105,7 +99,7 @@ extension SearchMainView {
     let router = NetworkRouter()
     let provider = NetworkProvider<SearchEndpoint>(router: router)
     let service = SearchServiceImpl(provider: provider)
-    let reducer = SearchMainReducer(service: service)
+    let reducer = SearchMainReducer(service: service, coordinator: MainCoordinator(.searchMain))
     let store = Store(reducer: reducer)
     SearchMainView(store: store)
 }

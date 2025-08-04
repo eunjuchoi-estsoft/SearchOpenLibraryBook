@@ -15,6 +15,7 @@ enum SystemImage: String, CaseIterable {
     case heart = "heart.fill"
     case magnifyingglass = "magnifyingglass"
     case exclamationmarkCircle = "exclamationmark.circle"
+    case book = "book"
     case bookClosed = "book.closed"
     
     var image: Image {

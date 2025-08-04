@@ -32,6 +32,13 @@
 		CA53DD5B2E3AF8DB006E5935 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD5A2E3AF8DB006E5935 /* LoadingView.swift */; };
 		CA53DD5D2E3B31B5006E5935 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD5C2E3B31B5006E5935 /* BookDetailView.swift */; };
 		CA53DD602E3C5E66006E5935 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD5F2E3C5E66006E5935 /* ImageConstants.swift */; };
+		CA53DD6E2E3F8A3C006E5935 /* BookDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD6D2E3F8A3C006E5935 /* BookDetailReducer.swift */; };
+		CA53DD702E3F9710006E5935 /* BookCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD6F2E3F9710006E5935 /* BookCoverView.swift */; };
+		CA53DD722E3FAA8D006E5935 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD712E3FAA8D006E5935 /* SafariView.swift */; };
+		CA53DD742E402F39006E5935 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD732E402F39006E5935 /* Coordinator.swift */; };
+		CA53DD762E402F4B006E5935 /* AppScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD752E402F4B006E5935 /* AppScene.swift */; };
+		CA53DD782E40304C006E5935 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD772E40304C006E5935 /* MainCoordinator.swift */; };
+		CA53DD7A2E404B20006E5935 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD792E404B20006E5935 /* ViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +88,13 @@
 		CA53DD5A2E3AF8DB006E5935 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		CA53DD5C2E3B31B5006E5935 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		CA53DD5F2E3C5E66006E5935 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
+		CA53DD6D2E3F8A3C006E5935 /* BookDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailReducer.swift; sourceTree = "<group>"; };
+		CA53DD6F2E3F9710006E5935 /* BookCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCoverView.swift; sourceTree = "<group>"; };
+		CA53DD712E3FAA8D006E5935 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		CA53DD732E402F39006E5935 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CA53DD752E402F4B006E5935 /* AppScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScene.swift; sourceTree = "<group>"; };
+		CA53DD772E40304C006E5935 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		CA53DD792E404B20006E5935 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -170,6 +184,7 @@
 		CA53DD052E389E6C006E5935 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CA53DD872E4051BD006E5935 /* Coordinator */,
 				CA53DD5E2E3C4B09006E5935 /* Reducer */,
 			);
 			path = Utils;
@@ -178,6 +193,7 @@
 		CA53DD062E389E74006E5935 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				CA53DD752E402F4B006E5935 /* AppScene.swift */,
 				CA53DD5F2E3C5E66006E5935 /* ImageConstants.swift */,
 			);
 			path = Constants;
@@ -261,6 +277,7 @@
 				CA53DD3F2E39BC71006E5935 /* SearchMainView.swift */,
 				CA53DD452E39D344006E5935 /* EmptyResultView.swift */,
 				CA53DD3D2E39B457006E5935 /* SearchView.swift */,
+				CA53DD6F2E3F9710006E5935 /* BookCoverView.swift */,
 				CA53DD582E3A5533006E5935 /* BookCardView.swift */,
 				CA53DD5C2E3B31B5006E5935 /* BookDetailView.swift */,
 			);
@@ -271,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				CA53DD412E39BCC2006E5935 /* SearchMainReducer.swift */,
+				CA53DD6D2E3F8A3C006E5935 /* BookDetailReducer.swift */,
 			);
 			path = Reducer;
 			sourceTree = "<group>";
@@ -279,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				CA53DD5A2E3AF8DB006E5935 /* LoadingView.swift */,
+				CA53DD712E3FAA8D006E5935 /* SafariView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -316,6 +335,16 @@
 				CA53DD3A2E39AEE3006E5935 /* Store.swift */,
 			);
 			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CA53DD872E4051BD006E5935 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CA53DD732E402F39006E5935 /* Coordinator.swift */,
+				CA53DD772E40304C006E5935 /* MainCoordinator.swift */,
+				CA53DD792E404B20006E5935 /* ViewFactory.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,7 +490,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA53DD2B2E38AA56006E5935 /* SearchError.swift in Sources */,
+				CA53DD722E3FAA8D006E5935 /* SafariView.swift in Sources */,
 				CA53DD602E3C5E66006E5935 /* ImageConstants.swift in Sources */,
+				CA53DD762E402F4B006E5935 /* AppScene.swift in Sources */,
 				CA53DD512E39DD16006E5935 /* SearchEndpoint.swift in Sources */,
 				CA53DD252E38A446006E5935 /* BaseEndpoint.swift in Sources */,
 				CA53DD1D2E38A25D006E5935 /* NetworkError.swift in Sources */,
@@ -471,12 +502,17 @@
 				CA53DD402E39BC71006E5935 /* SearchMainView.swift in Sources */,
 				CA53DD232E38A3D0006E5935 /* NetworkEnvironment.swift in Sources */,
 				CA53DD1F2E38A2B7006E5935 /* NetworkConstants.swift in Sources */,
+				CA53DD782E40304C006E5935 /* MainCoordinator.swift in Sources */,
+				CA53DD702E3F9710006E5935 /* BookCoverView.swift in Sources */,
 				CA53DD3B2E39AEE3006E5935 /* Store.swift in Sources */,
 				CA53DD012E389DC6006E5935 /* SearchOpenLibraryBookApp.swift in Sources */,
 				CA53DD462E39D344006E5935 /* EmptyResultView.swift in Sources */,
 				CA53DD552E39DFD2006E5935 /* Book.swift in Sources */,
 				CA53DD392E39AEB1006E5935 /* ReducerProtocol.swift in Sources */,
+				CA53DD6E2E3F8A3C006E5935 /* BookDetailReducer.swift in Sources */,
+				CA53DD7A2E404B20006E5935 /* ViewFactory.swift in Sources */,
 				CA53DD3E2E39B457006E5935 /* SearchView.swift in Sources */,
+				CA53DD742E402F39006E5935 /* Coordinator.swift in Sources */,
 				CA53DD1B2E38A235006E5935 /* HTTPMethod.swift in Sources */,
 				CA53DD4E2E39DA6E006E5935 /* SearchBookResponse.swift in Sources */,
 				CA53DD272E38A5C1006E5935 /* NetworkRouter.swift in Sources */,

@@ -45,6 +45,7 @@ struct SearchView: View {
                     .submitLabel(.search)
                     .onSubmit {
                         onTapSearchButton()
+                        isSearchTextEmpty = searchText.isEmpty
                     }
                 
                 // 구분선

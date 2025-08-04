@@ -40,6 +40,10 @@ struct SearchView: View {
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
                     .background(.white)
+                    .submitLabel(.search)
+                    .onSubmit {
+                        onTapSearchButton()
+                    }
                 
                 // 구분선
                 Rectangle()

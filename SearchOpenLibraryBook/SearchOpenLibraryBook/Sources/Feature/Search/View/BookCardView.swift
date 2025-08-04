@@ -112,9 +112,9 @@ struct BookCardView: View {
                 Text("상세보기")
                     .foregroundStyle(.black)
                     .font(.system(size: 14, weight: .semibold))
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 8)
             })
-            .padding(.vertical, 8)
-            .frame(maxWidth: .infinity)
             .overlay(
                 RoundedRectangle(cornerRadius: 8)
                     .stroke(lineWidth: 1)

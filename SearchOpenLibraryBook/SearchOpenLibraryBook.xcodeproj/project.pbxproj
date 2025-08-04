@@ -39,6 +39,7 @@
 		CA53DD762E402F4B006E5935 /* AppScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD752E402F4B006E5935 /* AppScene.swift */; };
 		CA53DD782E40304C006E5935 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD772E40304C006E5935 /* MainCoordinator.swift */; };
 		CA53DD7A2E404B20006E5935 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD792E404B20006E5935 /* ViewFactory.swift */; };
+		CA53DDAD2E407067006E5935 /* CachedAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DDAC2E407067006E5935 /* CachedAsyncImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		CA53DD752E402F4B006E5935 /* AppScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScene.swift; sourceTree = "<group>"; };
 		CA53DD772E40304C006E5935 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		CA53DD792E404B20006E5935 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		CA53DDAC2E407067006E5935 /* CachedAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -298,6 +300,7 @@
 			children = (
 				CA53DD5A2E3AF8DB006E5935 /* LoadingView.swift */,
 				CA53DD712E3FAA8D006E5935 /* SafariView.swift */,
+				CA53DDAC2E407067006E5935 /* CachedAsyncImage.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				CA53DD5B2E3AF8DB006E5935 /* LoadingView.swift in Sources */,
 				CA53DD212E38A2EE006E5935 /* EndpointType.swift in Sources */,
 				CA53DD5D2E3B31B5006E5935 /* BookDetailView.swift in Sources */,
+				CA53DDAD2E407067006E5935 /* CachedAsyncImage.swift in Sources */,
 				CA53DD402E39BC71006E5935 /* SearchMainView.swift in Sources */,
 				CA53DD232E38A3D0006E5935 /* NetworkEnvironment.swift in Sources */,
 				CA53DD1F2E38A2B7006E5935 /* NetworkConstants.swift in Sources */,

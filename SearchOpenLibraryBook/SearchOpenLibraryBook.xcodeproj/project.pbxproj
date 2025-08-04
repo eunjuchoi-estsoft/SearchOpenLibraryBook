@@ -32,6 +32,7 @@
 		CA53DD5B2E3AF8DB006E5935 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD5A2E3AF8DB006E5935 /* LoadingView.swift */; };
 		CA53DD5D2E3B31B5006E5935 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD5C2E3B31B5006E5935 /* BookDetailView.swift */; };
 		CA53DD602E3C5E66006E5935 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD5F2E3C5E66006E5935 /* ImageConstants.swift */; };
+		CA53DD6E2E3F8A3C006E5935 /* BookDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD6D2E3F8A3C006E5935 /* BookDetailReducer.swift */; };
 		CA53DD702E3F9710006E5935 /* BookCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD6F2E3F9710006E5935 /* BookCoverView.swift */; };
 		CA53DD722E3FAA8D006E5935 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD712E3FAA8D006E5935 /* SafariView.swift */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,7 @@
 		CA53DD5A2E3AF8DB006E5935 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		CA53DD5C2E3B31B5006E5935 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		CA53DD5F2E3C5E66006E5935 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
+		CA53DD6D2E3F8A3C006E5935 /* BookDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailReducer.swift; sourceTree = "<group>"; };
 		CA53DD6F2E3F9710006E5935 /* BookCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCoverView.swift; sourceTree = "<group>"; };
 		CA53DD712E3FAA8D006E5935 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -276,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				CA53DD412E39BCC2006E5935 /* SearchMainReducer.swift */,
+				CA53DD6D2E3F8A3C006E5935 /* BookDetailReducer.swift */,
 			);
 			path = Reducer;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				CA53DD462E39D344006E5935 /* EmptyResultView.swift in Sources */,
 				CA53DD552E39DFD2006E5935 /* Book.swift in Sources */,
 				CA53DD392E39AEB1006E5935 /* ReducerProtocol.swift in Sources */,
+				CA53DD6E2E3F8A3C006E5935 /* BookDetailReducer.swift in Sources */,
 				CA53DD3E2E39B457006E5935 /* SearchView.swift in Sources */,
 				CA53DD1B2E38A235006E5935 /* HTTPMethod.swift in Sources */,
 				CA53DD4E2E39DA6E006E5935 /* SearchBookResponse.swift in Sources */,

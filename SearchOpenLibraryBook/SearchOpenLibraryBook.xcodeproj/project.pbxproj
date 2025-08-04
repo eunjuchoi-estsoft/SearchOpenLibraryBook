@@ -35,6 +35,7 @@
 		CA53DD6E2E3F8A3C006E5935 /* BookDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD6D2E3F8A3C006E5935 /* BookDetailReducer.swift */; };
 		CA53DD702E3F9710006E5935 /* BookCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD6F2E3F9710006E5935 /* BookCoverView.swift */; };
 		CA53DD722E3FAA8D006E5935 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD712E3FAA8D006E5935 /* SafariView.swift */; };
+		CA53DD742E402F39006E5935 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD732E402F39006E5935 /* Coordinator.swift */; };
 		CA53DD762E402F4B006E5935 /* AppScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD752E402F4B006E5935 /* AppScene.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		CA53DD6D2E3F8A3C006E5935 /* BookDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailReducer.swift; sourceTree = "<group>"; };
 		CA53DD6F2E3F9710006E5935 /* BookCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCoverView.swift; sourceTree = "<group>"; };
 		CA53DD712E3FAA8D006E5935 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		CA53DD732E402F39006E5935 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CA53DD752E402F4B006E5935 /* AppScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +180,7 @@
 		CA53DD052E389E6C006E5935 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CA53DD872E4051BD006E5935 /* Coordinator */,
 				CA53DD5E2E3C4B09006E5935 /* Reducer */,
 			);
 			path = Utils;
@@ -328,6 +331,14 @@
 				CA53DD3A2E39AEE3006E5935 /* Store.swift */,
 			);
 			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CA53DD872E4051BD006E5935 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CA53DD732E402F39006E5935 /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,6 +504,7 @@
 				CA53DD392E39AEB1006E5935 /* ReducerProtocol.swift in Sources */,
 				CA53DD6E2E3F8A3C006E5935 /* BookDetailReducer.swift in Sources */,
 				CA53DD3E2E39B457006E5935 /* SearchView.swift in Sources */,
+				CA53DD742E402F39006E5935 /* Coordinator.swift in Sources */,
 				CA53DD1B2E38A235006E5935 /* HTTPMethod.swift in Sources */,
 				CA53DD4E2E39DA6E006E5935 /* SearchBookResponse.swift in Sources */,
 				CA53DD272E38A5C1006E5935 /* NetworkRouter.swift in Sources */,

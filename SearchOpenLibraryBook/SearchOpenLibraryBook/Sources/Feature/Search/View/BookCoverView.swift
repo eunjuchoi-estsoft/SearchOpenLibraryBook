@@ -35,7 +35,7 @@ struct BookCoverView: View {
             CachedAsyncImage(url: url) { image in
                 image
                     .resizable()
-                    .scaledToFill()
+                    .scaledToFit()
                     .frame(maxWidth: width)
                     .frame(height: height)
             } placeholder: {

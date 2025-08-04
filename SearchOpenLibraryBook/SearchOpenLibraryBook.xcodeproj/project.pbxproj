@@ -38,6 +38,7 @@
 		CA53DD742E402F39006E5935 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD732E402F39006E5935 /* Coordinator.swift */; };
 		CA53DD762E402F4B006E5935 /* AppScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD752E402F4B006E5935 /* AppScene.swift */; };
 		CA53DD782E40304C006E5935 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD772E40304C006E5935 /* MainCoordinator.swift */; };
+		CA53DD7A2E404B20006E5935 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD792E404B20006E5935 /* ViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		CA53DD732E402F39006E5935 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CA53DD752E402F4B006E5935 /* AppScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScene.swift; sourceTree = "<group>"; };
 		CA53DD772E40304C006E5935 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		CA53DD792E404B20006E5935 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -340,6 +342,7 @@
 			children = (
 				CA53DD732E402F39006E5935 /* Coordinator.swift */,
 				CA53DD772E40304C006E5935 /* MainCoordinator.swift */,
+				CA53DD792E404B20006E5935 /* ViewFactory.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				CA53DD552E39DFD2006E5935 /* Book.swift in Sources */,
 				CA53DD392E39AEB1006E5935 /* ReducerProtocol.swift in Sources */,
 				CA53DD6E2E3F8A3C006E5935 /* BookDetailReducer.swift in Sources */,
+				CA53DD7A2E404B20006E5935 /* ViewFactory.swift in Sources */,
 				CA53DD3E2E39B457006E5935 /* SearchView.swift in Sources */,
 				CA53DD742E402F39006E5935 /* Coordinator.swift in Sources */,
 				CA53DD1B2E38A235006E5935 /* HTTPMethod.swift in Sources */,

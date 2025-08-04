@@ -37,6 +37,7 @@
 		CA53DD722E3FAA8D006E5935 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD712E3FAA8D006E5935 /* SafariView.swift */; };
 		CA53DD742E402F39006E5935 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD732E402F39006E5935 /* Coordinator.swift */; };
 		CA53DD762E402F4B006E5935 /* AppScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD752E402F4B006E5935 /* AppScene.swift */; };
+		CA53DD782E40304C006E5935 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53DD772E40304C006E5935 /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		CA53DD712E3FAA8D006E5935 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		CA53DD732E402F39006E5935 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CA53DD752E402F4B006E5935 /* AppScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScene.swift; sourceTree = "<group>"; };
+		CA53DD772E40304C006E5935 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -337,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				CA53DD732E402F39006E5935 /* Coordinator.swift */,
+				CA53DD772E40304C006E5935 /* MainCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				CA53DD402E39BC71006E5935 /* SearchMainView.swift in Sources */,
 				CA53DD232E38A3D0006E5935 /* NetworkEnvironment.swift in Sources */,
 				CA53DD1F2E38A2B7006E5935 /* NetworkConstants.swift in Sources */,
+				CA53DD782E40304C006E5935 /* MainCoordinator.swift in Sources */,
 				CA53DD702E3F9710006E5935 /* BookCoverView.swift in Sources */,
 				CA53DD3B2E39AEE3006E5935 /* Store.swift in Sources */,
 				CA53DD012E389DC6006E5935 /* SearchOpenLibraryBookApp.swift in Sources */,

@@ -9,14 +9,19 @@ import SwiftUI
 
 @main
 struct SearchOpenLibraryBookApp: App {
+    @StateObject private var coordinator = MainCoordinator(.searchMain)
+
     var body: some Scene {
         WindowGroup {
-            let router = NetworkRouter()
-            let networkProvider = NetworkProvider<SearchEndpoint>(router: router)
-            let service = SearchServiceImpl(provider: networkProvider)
-            let reducer = SearchMainReducer(service: service)
-            let store = Store(reducer: reducer)
-            SearchMainView(store: store)
+            NavigationStack(path: $coordinator.path) {
+                ViewFactory.build(scene: coordinator.initialScene, coordinator: coordinator)
+                    .navigationDestination(for: AppScene.self) { scene in
+                        ViewFactory.build(scene: scene, coordinator: coordinator)
+                    }
+                    .sheet(item: $coordinator.sheet) { scene in
+                        ViewFactory.build(scene: scene, coordinator: coordinator)
+                    }
+            }
         }
     }
 }

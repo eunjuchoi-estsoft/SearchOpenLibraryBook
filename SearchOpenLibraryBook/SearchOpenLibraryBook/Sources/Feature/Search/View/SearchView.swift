@@ -15,6 +15,7 @@ struct SearchView: View {
     @Binding private var searchText: String
     private let onTapSearchButton: (() -> Void)
     @State private var isSearchTextEmpty: Bool = false
+    @FocusState private var isFocused: Bool
     
     // MARK: - Initializer
     
@@ -36,6 +37,7 @@ struct SearchView: View {
                 
                 // 검색 입력 필드
                 TextField(placeholder, text: $searchText)
+                    .focused($isFocused)
                     .font(.system(size: 15, weight: .medium))
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
@@ -54,6 +56,7 @@ struct SearchView: View {
                 Button(action: {
                     onTapSearchButton()
                     isSearchTextEmpty = searchText.isEmpty
+                    isFocused = false
                 }) {
                     SystemImage.chevronRight.image
                         .foregroundStyle(.black)
